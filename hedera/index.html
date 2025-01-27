@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hedera Chat Demo</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div id="app">
+      <div class="chat-container">
+        <div class="header">
+          <h1>Hedera Chat Demo</h1>
+          <div class="network-status">
+            <span class="status-dot"></span>
+            <span id="networkStatus">Connected to Hedera</span>
+          </div>
+          <div class="transaction-info" id="transactionInfo"></div>
+        </div>
+        <div class="messages" id="messages"></div>
+        <div class="input-area">
+          <input 
+            type="text" 
+            id="messageInput" 
+            placeholder="Type your message..."
+          />
+          <button id="sendButton">
+            <span class="button-text">Send</span>
+            <span class="gas-fee" id="gasFee">0.00001 ℏ</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/index.js"></script>
+  </body>
+</html>
